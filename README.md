@@ -22,4 +22,3 @@ https://www.youtube.com/watch?v=6USXQx9gHmc
 - Bringing a team together for a new project.
 
 
-View Live demo here
