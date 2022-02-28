@@ -37,7 +37,7 @@ export const AuthContextProvider = ({ children }) => {
   /**For testing
    *
    */
-  console.log('AuthContext State:', state);
+  // console.log('AuthContext State:', state);
 
   // dispatch({ type: ''})
   return (

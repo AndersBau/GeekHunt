@@ -67,7 +67,7 @@ function Navbar() {
                 className="text-xl no-underline
               text-white"
               >
-                Hello!, {user.displayName}!
+                Hello!, {user.firstName}!
               </p>
             ) : (
               <p

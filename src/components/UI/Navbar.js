@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useDocument } from "../../hooks/useDocument";
 import { useAuthContext } from "../../hooks/useAuthContext";
@@ -8,13 +8,16 @@ function Navbar() {
   const { signout, isPending } = useSignout();
   const { user } = useAuthContext();
   const id = user ? user.uid : undefined;
-  const { document } = useDocument("users", id);
   const history = useHistory();
+  const { document } = useDocument("users", id);
+
+
 
   function handleLogout() {
     signout();
     history.push("/signin");
   }
+
 
   return (
     <nav className="flex items-center justify-between flex-wrap h-32 bg-[#2E4C6D]">
@@ -62,12 +65,12 @@ function Navbar() {
         )}
         {user && (
           <div className="px-3">
-            {user.displayName ? (
+            {document ? (
               <p
                 className="text-xl no-underline
               text-white"
               >
-                Hello!, {user.displayName}!
+                Hello {document.firstName}!
               </p>
             ) : (
               <p
