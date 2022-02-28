@@ -14,8 +14,7 @@ export default function FetchProfiles() {
       </h1>
       <SearchProfiles />
       <div
-        className="sm:flex flex-wrap flex-col md:flex-row justify-center 
-      justify-evenly text-center gap-1"
+        className="sm:flex flex-wrap flex-col md:flex-row justify-center text-center gap-1"
       >
         {isPending && <div>Loading users...</div>}
         {error && <div>{error}</div>}
@@ -41,7 +40,7 @@ export default function FetchProfiles() {
                     </div>
                   </div>
                   <div className="text-3xl sm:text-2xl text-[#2E4C6D] font-bold py-2">
-                    {user.displayName} {user.lastName}
+                    {user.firstName} {user.lastName}
                   </div>
                   <div className="text-xl text-gray-400 ">{user.jobTitle}</div>
                   <div>

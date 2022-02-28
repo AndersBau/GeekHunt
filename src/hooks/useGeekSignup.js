@@ -10,7 +10,7 @@ export const useGeekSignup = () => {
 
 
 
-  const signup = async (email, password, displayName, lastName, picture, jobTitle, description, skills, linkedInUrl, gitHubUrl) => {
+  const signup = async (email, password, firstName, lastName, picture, jobTitle, description, skills, linkedInUrl, gitHubUrl) => {
     setError(null)
     setIsPending(true)
 
@@ -37,26 +37,26 @@ export const useGeekSignup = () => {
       if (!res) {
         throw new Error('Could not complete signup')
       }
-      
+
       //upload user profile picture
       const userPic = picture ? picture : null
-      const imgUrl = await getImageUrl(res.user.uid, userPic) 
-     
+      const imgUrl = await getImageUrl(res.user.uid, userPic)
 
-      await res.user.updateProfile({ displayName, photoURL: imgUrl })
+
+      await res.user.updateProfile({ firstName, photoURL: imgUrl })
 
        // create a user document
        await projectFirestore.collection('users').doc(res.user.uid).set({
         online: true,
         isAGeek: true,
-        displayName,
+        firstName,
         email,
         lastName,
         photoURL: imgUrl,
         jobTitle,
-        description, 
-        skills, 
-        linkedInUrl, 
+        description,
+        skills,
+        linkedInUrl,
         gitHubUrl
       })
 

@@ -94,7 +94,7 @@ function App() {
                   <Transactions />
                 </Route>
                 <Route path="/messages">
-                  <MessagingPage />
+                  {/* <MessagingPage /> */}
                 </Route>
                 <Route path="/conversations/:id">
                   {!user && <Redirect to="/login" />}
