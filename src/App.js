@@ -4,23 +4,23 @@ import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import Home from './components/Home';
 import LandingPage from './components/LandingPage';
-import Navbar from './components/UI/Navbar';
+// import Navbar from './components/UI/Navbar';
 import Footer from './components/UI/Footer';
 import { useAuthContext } from './hooks/useAuthContext';
 import Profile from './components/Users/Profile';
 import Dashboard from './components/Dashboard/Dashboard';
-import OnlineUsers from './components/Users/OnlineUsers';
+// import OnlineUsers from './components/Users/OnlineUsers';
 import CreateProject from './components/Dashboard/CreateProject';
-import AllProjects from './components/Dashboard/AllProjects';
+// import AllProjects from './components/Dashboard/AllProjects';
 import SingleProject from './components/Dashboard/SingleProject';
 import EditProfile from './components/Users/EditProfile';
 import FetchProfiles from './components/Home/FetchProfiles';
-import MessagingPage from './components/Messaging/MessagingPage'
+// import MessagingPage from './components/Messaging/MessagingPage'
 import SingleConversation from './components/Messaging/SingleConversation'
 import AdminPanel from './components/admin/adminPanel';
 import GoogleCalendar from './components/Calendar/GoogleCalendar';
-import Calendar from './components/Calendar/Calendar';
-import MyCalendar from './components/Calendar/MyCalendar';
+// import Calendar from './components/Calendar/Calendar';
+// import MyCalendar from './components/Calendar/MyCalendar';
 import Transactions from './components/Transactions/Transactions';
 import StaticCalendar from './components/Calendar/Calendar';
 import PublicProfile from "./components/Users/PublicProfile"
