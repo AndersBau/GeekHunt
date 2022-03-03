@@ -1,18 +1,15 @@
 import React from "react";
 import { useCollection } from "../../hooks/useCollection";
-import SearchProfiles from "./SearchProfiles";
-import Navbar from "../UI/Navbar";
+// import SearchProfiles from "./SearchProfiles";
 
 export default function FetchProfiles() {
   const { isPending, error, documents } = useCollection("users");
-  console.log("*****DOCUMENTS ", documents);
+
   return (
     <>
-      <Navbar />
       <h1 className="flex justify-center mx-auto pt-16 text-5xl font-bold">
         Geeks
       </h1>
-      <SearchProfiles />
       <div className="sm:flex flex-wrap flex-col md:flex-row justify-center text-center gap-1">
         {isPending && <div>Loading users...</div>}
         {error && <div>{error}</div>}

@@ -8,14 +8,14 @@ function Navbar() {
   const { signout, isPending } = useSignout();
   const { user } = useAuthContext();
   const id = user ? user.uid : undefined;
-  const history = useHistory();
+  // const history = useHistory();
   const { document } = useDocument("users", id);
 
 
 
   function handleLogout() {
     signout();
-    history.push("/signin");
+    // history.push("/signin");
   }
 
 

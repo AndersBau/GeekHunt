@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useDocument } from "../../hooks/useDocument";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { Link } from "react-router-dom";
-import Navbar from "../UI/Navbar";
-import NavbarCopy from "../UI/NavbarCopy"
 const EditProfile = () => {
 
   const { user } = useAuthContext();
@@ -17,7 +15,6 @@ if(!document) {
 
   return (
     <div>
-      <Navbar />
       <div className="flex bg-gray-100 justify-center w-screen">
         <div className="flex flex-col sm:flex-col w-5/6  justify-center text-center md:text-left text-gray-700">
           <div className=" flex flex-col sm:flex-row w-full sm:h-96 md:h-60 border-4 border-[#DADDFC] rounded-xl shadow-lg mt-4 p-6">

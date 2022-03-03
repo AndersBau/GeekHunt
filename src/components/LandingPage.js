@@ -5,7 +5,7 @@ import Navbar from "./UI/Navbar";
 const LandingPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />? */}
       <div className="sm:flex flex-wrap justify-center text-center gap-12 px-4">
         <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-6 bg-white mt-8 mb-2 h-84 shadow-lg rounded-lg">
           <a href="/signup">
@@ -114,7 +114,7 @@ const LandingPage = () => {
               </p>
               <p className="text-md text-gray-500 max-w-xs py-4 font-light">
                 Melissa Molina is a software Engenieer, mother and wife, born in Dominican Republic.
-                She is a team worker, who likes problem solving. Lover of nature and the outdoors. 
+                She is a team worker, who likes problem solving. Lover of nature and the outdoors.
               </p>
             </div>
             <div className="pt-8 flex border-t border-gray-200 w-44 mx-auto text-gray-500 items-center justify-center gap-8">

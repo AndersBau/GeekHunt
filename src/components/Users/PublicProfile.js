@@ -73,7 +73,6 @@ const PublicProfile = () => {
 
   return (
     <>
-      <Navbar />
       <div className="flex flex-col justify-center px-5 md:px-16 w-full xl:px-80 z-10 text-gray-700">
         <div className="flex flex-col justify-center">
           <div className="flex flex-row justify-center   md:flex-rows mdw-3/4 lg:h-70  mt-2 p-4 border-8 border-[#DADDFC] rounded-xl shadow-lg">
@@ -90,7 +89,7 @@ const PublicProfile = () => {
                   {document.jobTitle}
                 </h1>
                 <p className="text-xl font-medium text-gray-500 dark:text-gray-400">
-                  {document.displayName} {document.lastName}
+                  {document.firstName} {document.lastName}
                 </p>
                 <button
                   className="inline-block px-6 py-2.5 bg-[#2E4C6D] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-900 hover:shadow-lg focus:bg-[#2E4C6D] focus:shadow-lg  focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out mr-1.5"
@@ -118,14 +117,14 @@ const PublicProfile = () => {
                   alt="Avatar"
                 />
                 </div>
-                <div class="swiper-slide object-cover ">
+                <div className="swiper-slide object-cover ">
                 <img
                   src={photos[1]}
                   className="object-cover w-full h-96 z-0"
                   alt="Avatar"
                 />
                 </div>
-                <div class="swiper-slide object-cover ">
+                <div className="swiper-slide object-cover ">
                 <img
                   src={photos[2]}
                   className="object-cover w-full h-96 z-0"
