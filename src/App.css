@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  background-color: aquamarine;
 }
 .container{
   flex-grow: 1;
