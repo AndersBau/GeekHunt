@@ -46,7 +46,6 @@ if(!document) {
 
   return (
     <div className="bg-white ">
-      <Navbar />
       <div className="py-10">
       <div className="rounded-xl border-4 border-[#DADDFC] p-10 md:w-3/4 lg:w-1/2 mx-auto">
         <div className="w-full  sm:text-right">

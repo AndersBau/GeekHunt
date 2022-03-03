@@ -1,0 +1,40 @@
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(68, 11, 167);
+  height: 13vh;
+  color:aliceblue
+}
+
+.nav_logo-container{
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+.nav_logo {
+  width: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 50%;
+}
+.menu-userName {
+  display: flex;
+  align-self: flex-end;
+}
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-around;
+}
+
+.menu-list a {
+  font-size: 1rem;
+  margin: 0 .4rem;
+}

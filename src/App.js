@@ -31,11 +31,9 @@ function App() {
   const { authIsReady, user } = useAuthContext();
 
   return (
-    <>
-      <div className="min-h-max">
-        <div>
+    <div className='app'>
       <Navbar />
-      </div>
+      <div >
         <div>
           {authIsReady && (
             <BrowserRouter>
@@ -113,7 +111,7 @@ function App() {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

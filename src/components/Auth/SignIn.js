@@ -18,9 +18,8 @@ function SignIn() {
 
   return (
     <>
-      <Navbar />
       <div
-        className="h-screen bg-grey flex flex-col space-y-10 
+        className="h-screen bg-grey flex flex-col space-y-10
       justify-center items-center"
       >
         <div className="justify-center w-full max-w-md">
@@ -47,7 +46,7 @@ function SignIn() {
               </label>
               <input
                 className="shadow appearance-none border rounded w-full
-              py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none 
+              py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none
               focus:shadow-outline"
                 v-model="form.password"
                 type="password"
@@ -74,7 +73,7 @@ function SignIn() {
               )}
 
               <p
-                className="inline-block align-baseline font-normal 
+                className="inline-block align-baseline font-normal
               text-sm text-blue-500 hover:text-blue-800"
                 href="#"
               >

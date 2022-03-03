@@ -15,7 +15,7 @@ export default function FetchProfiles() {
         {error && <div>{error}</div>}
         {documents &&
           documents.map((user) => (
-            <>
+            <div key={user.id}>
               {user.isAGeek && (
                 <div
                   className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white
@@ -36,7 +36,7 @@ export default function FetchProfiles() {
                   <div className="text-3xl sm:text-2xl text-[#2E4C6D] font-bold py-2">
                     {user.firstName} {user.lastName}
                   </div>
-                  <div key={user.id} className="text-xl text-gray-400 ">
+                  <div className="text-xl text-gray-400 ">
                     {user.jobTitle}
                   </div>
                   <div>
@@ -58,7 +58,7 @@ export default function FetchProfiles() {
                   </a>
                 </div>
               )}
-            </>
+            </div>
           ))}
       </div>
     </>
